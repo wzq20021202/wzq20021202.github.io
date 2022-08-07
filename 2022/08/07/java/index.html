@@ -4,21 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="markdown Study, wzq&#39;s blogs">
-    <meta name="description" content="MarkDown
-一级标题二级标题三级标题四级标题五级标题六级标题$(document).ready(function () &amp;amp;#123;
-   alert(&#39;离不开的网&#39;);
-&amp;amp;#125;);
+    <meta name="keywords" content="Java Study, wzq&#39;s blogs">
+    <meta name="description" content="
+数据库连接import java.sql.*;
 
-
-
-
-表头
-表头
-
-
-
-单">
+public class TestJdbc &amp;amp;#123;
+    public static void main(String[] args) throws ClassNotFou">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>markdown Study | wzq&#39;s blogs</title>
+    <title>Java Study | wzq&#39;s blogs</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -347,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">markdown Study</h1>
+                    <h1 class="description center-align post-title">Java Study</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +367,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/markdown/">
-                                <span class="chip bg-color">markdown</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -388,8 +379,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/markdown/" class="post-category">
-                                markdown
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -401,7 +392,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-08-06
+                    2022-08-07
                 </div>
                 
 
@@ -415,7 +406,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    151
+                    136
                 </div>
                 
 
@@ -442,81 +433,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="MarkDown"><a href="#MarkDown" class="headerlink" title="MarkDown"></a><em><strong>MarkDown</strong></em></h1><hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><pre class=" language-javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-   <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'离不开的网'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <hr>
+<h1 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a><strong>数据库连接</strong></h1><pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestJdbc</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> ClassNotFoundException<span class="token punctuation">,</span> SQLException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//注册JDBC驱动程序</span>
+        Class<span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">"com.mysql.cj.jdbc.Driver"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//打开一个连接</span>
+        Connection conn <span class="token operator">=</span> DriverManager<span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span>
+                <span class="token string">"jdbc:mysql://localhost:3306/world?&amp;userSSL=false"</span><span class="token punctuation">,</span>
+                <span class="token string">"root"</span><span class="token punctuation">,</span>
+                <span class="token string">"3033715900"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//执行一个查询</span>
+        Statement stat <span class="token operator">=</span> conn<span class="token punctuation">.</span><span class="token function">createStatement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ResultSet rs <span class="token operator">=</span> stat<span class="token punctuation">.</span><span class="token function">executeQuery</span><span class="token punctuation">(</span><span class="token string">"select *from city where CountryCode='AFG'"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//ResultSet rs = stmt.executeUpdate(sql); UPDATE，INSERT或DELETE语句</span>
+        <span class="token comment" spellcheck="true">// 从结果集中提取数据</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>rs<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//Retrieve by column name</span>
+            <span class="token keyword">int</span> id <span class="token operator">=</span> rs<span class="token punctuation">.</span><span class="token function">getInt</span><span class="token punctuation">(</span><span class="token string">"ID"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            String name <span class="token operator">=</span> rs<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">"Name"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//Display values</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"ID: "</span> <span class="token operator">+</span> id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">", Name: "</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        conn<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left"><u>带下划线文本</u></td>
-<td align="right"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="left"><del>删除线</del></td>
-<td align="right"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="left"><img src="D:/html+css+javascript/Study/resource/QQ图片20220702202459.gif" alt="RUNOOB 图标"></td>
-<td align="right"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="left">这个链接用 1 作为网址变量 <a target="_blank" rel="noopener" href="http://static.runoob.com/images/runoob-logo.png">RUNOOB</a>.</td>
-<td align="right"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="left">然后在文档的结尾为变量赋值（网址）</td>
-<td align="right"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑<br>这是一个链接 <a target="_blank" rel="noopener" href="https://www.baidu.com/">百度链接</a><br><img src="https://www.baidu.com/img/bd_logo1.png" alt="baidu 图标" title="baidu"></p>
-<blockquote>
-<p>最外层</p>
-<blockquote>
-<p>第一层嵌套</p>
-<blockquote>
-<p>第二层嵌套</p>
-</blockquote>
-</blockquote>
-</blockquote>
 
                 
             </div>
@@ -543,7 +488,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wzq20021202.github.io/2022/08/06/markdown/">https://wzq20021202.github.io/2022/08/06/markdown/</a>
+                    <a href="https://wzq20021202.github.io/2022/08/07/java/">https://wzq20021202.github.io/2022/08/07/java/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -581,8 +526,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/markdown/">
-                                    <span class="chip bg-color">markdown</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -930,70 +875,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2022/08/07/python/">
+                <a href="/2022/08/07/java/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Python Study">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Java Study">
                         
-                        <span class="card-title">Python Study</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/Anaconda/">
-                        <span class="chip bg-color">Anaconda</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/08/06/markdown/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="markdown Study">
-                        
-                        <span class="card-title">markdown Study</span>
+                        <span class="card-title">Java Study</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1004,14 +897,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category">
-                                    markdown
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -1022,8 +915,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/08/07/linux/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Linux Study">
+                        
+                        <span class="card-title">Linux Study</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>
