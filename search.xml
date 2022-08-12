@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Android Study</title>
+      <link href="/2022/08/12/AndroidStudy/"/>
+      <url>/2022/08/12/AndroidStudy/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Android-Study"><a href="#Android-Study" class="headerlink" title="Android Study"></a><strong>Android Study</strong></h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Study </tag>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JS Study</title>
       <link href="/2022/08/11/JSstudy/"/>
       <url>/2022/08/11/JSstudy/</url>
@@ -59,8 +86,8 @@
     
     <entry>
       <title>Linux Study</title>
-      <link href="/2022/08/07/linux/"/>
-      <url>/2022/08/07/linux/</url>
+      <link href="/2022/08/07/linuxStudy/"/>
+      <url>/2022/08/07/linuxStudy/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><em><strong>Linux</strong></em></h1><hr><h2 id="报错1："><a href="#报错1：" class="headerlink" title="报错1："></a><strong>报错1</strong>：</h2><blockquote><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><blockquote><p>Ubuntu的IP地址不显示问题</p></blockquote><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote><p>sudo dhclient ens33<br>sudo ifconfig ens33</p></blockquote></blockquote>]]></content>
       
@@ -86,8 +113,8 @@
     
     <entry>
       <title>Git Study</title>
-      <link href="/2022/08/07/git/"/>
-      <url>/2022/08/07/git/</url>
+      <link href="/2022/08/07/gitStudy/"/>
+      <url>/2022/08/07/gitStudy/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a><em><strong>Git</strong></em></h1><hr><h2 id="报错1："><a href="#报错1：" class="headerlink" title="报错1："></a><strong>报错1</strong>：</h2><blockquote><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述:"></a>问题描述:</h3><blockquote><p>pycharm 提交代码出现错误remote: [31mx-oauth-basic: Incorrect username or password (access token)</p></blockquote><h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><blockquote><p>第一步:控制台输入 git config –system –unset credential.helper<br>第二步:重启pycharm</p></blockquote></blockquote>]]></content>
       
@@ -116,7 +143,7 @@
       <link href="/2022/08/07/pythonStudy/"/>
       <url>/2022/08/07/pythonStudy/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a><em><strong>Python</strong></em></h1><hr><h2 id="报错1："><a href="#报错1：" class="headerlink" title="报错1："></a><strong>报错1</strong>：</h2><blockquote><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><blockquote><p>UserWarning: loaded more than 1 DLL from .libs:<br>出现这个报错说明在你安装新的软件，或者更新numpy或者干什么的时候，旧的numpy没有卸载掉，两版numpy导致出现冲突</p></blockquote><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote><p>1.进入cmd 卸载掉numpy：pip uninstall numpy<br>2.重新安装numpy：pip install numpy<br>3.此时若numpy不可用，查看.libs文件夹，删除掉其中的另一个dll文件，应该可用</p></blockquote></blockquote><hr><h1 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a><em><strong>Anaconda</strong></em></h1><h2 id="Anaconda-换国内源"><a href="#Anaconda-换国内源" class="headerlink" title="Anaconda 换国内源"></a>Anaconda 换国内源</h2><h3 id="清华源"><a href="#清华源" class="headerlink" title="清华源"></a>清华源</h3><blockquote><p>在cmd 命令行中，输入添加以下命令（前提是要安装了Anaconda包管理工具）<br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</a><br>conda config –set show_channel_urls yes</p></blockquote><h3 id="中科大源"><a href="#中科大源" class="headerlink" title="中科大源"></a>中科大源</h3><blockquote><p>与上述操作一样，在cmd命令行进行安装<br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/main/">https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/free/">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/">https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/">https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/">https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/">https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/</a><br>conda config –set show_channel_urls yes</p></blockquote><h3 id="恢复默认源"><a href="#恢复默认源" class="headerlink" title="恢复默认源"></a>恢复默认源</h3><blockquote><p>在cmd命令行使用下列命令即可<br>conda config –remove-key channels</p></blockquote><h3 id="查看源"><a href="#查看源" class="headerlink" title="查看源"></a>查看源</h3><blockquote><p>conda config –show<br>查看channels,出现了上述添加的过程则证明换成功了。<br>一些问题<br>如果还是无法安装第三方库或者很慢，则观察自己的源是否为上述添加的源，如果还夹杂着别的源，先进行恢复默认源（上述操作），然后再进行添加国内源（上述操作）。</p></blockquote><hr><h1 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a><em><strong>Jupyter Notebook</strong></em></h1><blockquote><ul><li>cd D:\code_example\</li><li>jupyter notebook</li></ul></blockquote>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a><em><strong>Python</strong></em></h1><h2 id="报错1："><a href="#报错1：" class="headerlink" title="报错1："></a><strong>报错1</strong>：</h2><blockquote><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述:"></a>问题描述:</h3><blockquote><p>UserWarning: loaded more than 1 DLL from .libs:<br>出现这个报错说明在你安装新的软件，或者更新numpy或者干什么的时候，旧的numpy没有卸载掉，两版numpy导致出现冲突</p></blockquote><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法:"></a>解决办法:</h3><blockquote><p>1.进入cmd 卸载掉numpy：pip uninstall numpy<br>2.重新安装numpy：pip install numpy<br>3.此时若numpy不可用，查看.libs文件夹，删除掉其中的另一个dll文件，应该可用</p></blockquote></blockquote><hr><h1 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a><em><strong>Anaconda</strong></em></h1><h2 id="Anaconda-换国内源"><a href="#Anaconda-换国内源" class="headerlink" title="Anaconda 换国内源"></a>Anaconda 换国内源</h2><h3 id="清华源"><a href="#清华源" class="headerlink" title="清华源:"></a>清华源:</h3><blockquote><p>在cmd 命令行中，输入添加以下命令（前提是要安装了Anaconda包管理工具）<br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</a><br>conda config –set show_channel_urls yes</p></blockquote><h3 id="中科大源"><a href="#中科大源" class="headerlink" title="中科大源:"></a>中科大源:</h3><blockquote><p>与上述操作一样，在cmd命令行进行安装<br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/main/">https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/free/">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/">https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/">https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/">https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/">https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/</a><br>conda config –set show_channel_urls yes</p></blockquote><h3 id="恢复默认源"><a href="#恢复默认源" class="headerlink" title="恢复默认源:"></a>恢复默认源:</h3><blockquote><p>在cmd命令行使用下列命令即可<br>conda config –remove-key channels</p></blockquote><h3 id="查看源"><a href="#查看源" class="headerlink" title="查看源:"></a>查看源:</h3><blockquote><p>conda config –show<br>查看channels,出现了上述添加的过程则证明换成功了。<br>一些问题<br>如果还是无法安装第三方库或者很慢，则观察自己的源是否为上述添加的源，如果还夹杂着别的源，先进行恢复默认源（上述操作），然后再进行添加国内源（上述操作）。</p></blockquote><hr><h1 id="pip"><a href="#pip" class="headerlink" title="pip"></a><em><strong>pip</strong></em></h1><h2 id="升级所有包"><a href="#升级所有包" class="headerlink" title="升级所有包"></a>升级所有包</h2><pre class=" language-Python"><code class="language-Python">import pkg_resourcesfrom subprocess import callfor packages in [dist.project_name for dist in pkg_resources.working_set]:    call("pip3 install --upgrade " + ''.join(packages) + ' --user', shell=True)</code></pre><h1 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a><em><strong>Jupyter Notebook</strong></em></h1>]]></content>
       
       
       <categories>
