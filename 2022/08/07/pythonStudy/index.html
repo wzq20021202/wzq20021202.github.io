@@ -412,7 +412,7 @@ UserWarning: loaded more than 1 DLL from .libs:出现这个报错说明在你安
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    465
+                    472
                 </div>
                 
 
@@ -464,12 +464,11 @@ UserWarning: loaded more than 1 DLL from .libs:出现这个报错说明在你安
 <p>conda config –show<br>查看channels,出现了上述添加的过程则证明换成功了。<br>一些问题<br>如果还是无法安装第三方库或者很慢，则观察自己的源是否为上述添加的源，如果还夹杂着别的源，先进行恢复默认源（上述操作），然后再进行添加国内源（上述操作）。</p>
 </blockquote>
 <hr>
-<h1 id="pip"><a href="#pip" class="headerlink" title="pip"></a><em><strong>pip</strong></em></h1><h2 id="升级所有包"><a href="#升级所有包" class="headerlink" title="升级所有包"></a>升级所有包</h2><pre class=" language-Python"><code class="language-Python">import pkg_resources
+<h1 id="pip"><a href="#pip" class="headerlink" title="pip"></a><em><strong>pip</strong></em></h1><h2 id="升级所有包"><a href="#升级所有包" class="headerlink" title="升级所有包"></a>升级所有包</h2><pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import pkg_resources
 from subprocess import call
 
 for packages in [dist.project_name for dist in pkg_resources.working_set]:
-    call("pip3 install --upgrade " + ''.join(packages) + ' --user', shell=True)
-</code></pre>
+    call(&quot;pip3 install --upgrade &quot; + &#39;&#39;.join(packages) + &#39; --user&#39;, shell&#x3D;True)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a><em><strong>Jupyter Notebook</strong></em></h1>
                 
             </div>
@@ -929,12 +928,12 @@ for packages in [dist.project_name for dist in pkg_resources.working_set]:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
-                    </a>
-                    
                     <a href="/tags/Study/">
                         <span class="chip bg-color">Study</span>
+                    </a>
+                    
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
@@ -1217,7 +1216,7 @@ for packages in [dist.project_name for dist in pkg_resources.working_set]:
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">1.4k</span>
+                        class="white-color">1.5k</span>
             
             
             

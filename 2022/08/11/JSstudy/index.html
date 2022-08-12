@@ -411,7 +411,7 @@ JavaScript 能够以不同方式“显示”数据：
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    521
+                    576
                 </div>
                 
 
@@ -450,88 +450,61 @@ JavaScript 能够以不同方式“显示”数据：
 <li>使用 console.log() 写入浏览器控制台</li>
 </ul>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>demo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>demo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"demo"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">;</span>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-</code></pre>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>我的第一张网页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>我的第一张网页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>我的第一个段落。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
 document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-</code></pre>
-<pre class=" language-html"><code class="language-html">//在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML 
-<span class="token doctype">&lt;!DOCTYPE html></span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">//在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML 
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>我的第一张网页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>我的第一个段落<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>document.write(5 + 6)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>试一试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript">document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>试一试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="重新声明"><a href="#重新声明" class="headerlink" title="重新声明"></a>重新声明</h2><ul>
-<li>允许在程序的任何位置使用 var 重新声明 JavaScript 变量：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">var x = 10;
-// 现在，x 为 10
-var x = 6;
-// 现在，x 为 6
-</code></pre>
-<ul>
-<li>在相同的作用域，或在相同的块中，通过 let 重新声明一个 var 变量是不允许的：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">var x = 10;     // 允许
-let x = 6;      // 不允许
+<li>允许在程序的任何位置使用 var 重新声明 JavaScript 变量：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
+&#x2F;&#x2F; 现在，x 为 10
+var x &#x3D; 6;
+&#x2F;&#x2F; 现在，x 为 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>在相同的作用域，或在相同的块中，通过 let 重新声明一个 var 变量是不允许的：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;     &#x2F;&#x2F; 允许
+let x &#x3D; 6;      &#x2F;&#x2F; 不允许
 &#123;
-  var x = 10;  // 允许
-  let x = 6;   // 不允许
-&#125;
-</code></pre>
-<ul>
-<li>在相同的作用域，或在相同的块中，通过 let 重新声明一个 let 变量是不允许的：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">let x = 10;    // 允许
-let x = 6;     // 不允许
+  var x &#x3D; 10;  &#x2F;&#x2F; 允许
+  let x &#x3D; 6;   &#x2F;&#x2F; 不允许
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>在相同的作用域，或在相同的块中，通过 let 重新声明一个 let 变量是不允许的：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">let x &#x3D; 10;    &#x2F;&#x2F; 允许
+let x &#x3D; 6;     &#x2F;&#x2F; 不允许
 &#123;
-  let x = 10;  // 允许
-  let x = 6;   // 不允许
-&#125;
-</code></pre>
-<ul>
-<li>在相同的作用域，或在相同的块中，通过 var 重新声明一个 let 变量是不允许的：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">let x = 10;    // 允许
-var x = 6;     // 不允许
+  let x &#x3D; 10;  &#x2F;&#x2F; 允许
+  let x &#x3D; 6;   &#x2F;&#x2F; 不允许
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>在相同的作用域，或在相同的块中，通过 var 重新声明一个 let 变量是不允许的：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">let x &#x3D; 10;    &#x2F;&#x2F; 允许
+var x &#x3D; 6;     &#x2F;&#x2F; 不允许
 &#123;
-  let x = 10;  // 允许
-  var x = 6;   // 不允许
-&#125;
-</code></pre>
-<ul>
-<li>在不同的作用域或块中，通过 let 重新声明变量是允许的：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">let x = 6;     // 允许
+  let x &#x3D; 10;  &#x2F;&#x2F; 允许
+  var x &#x3D; 6;   &#x2F;&#x2F; 不允许
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>在不同的作用域或块中，通过 let 重新声明变量是允许的：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">let x &#x3D; 6;     &#x2F;&#x2F; 允许
 &#123;
-  let x = 7;   // 允许
+  let x &#x3D; 7;   &#x2F;&#x2F; 允许
 &#125;
 &#123;
-  let x = 8;   // 允许
-&#125;
-</code></pre>
+  let x &#x3D; 8;   &#x2F;&#x2F; 允许
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
 <h2 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h2><ul>
-<li>通过 var 声明的变量会提升到顶端。您可以在声明变量之前就使用它：</li>
+<li>通过 var 声明的变量会提升到顶端。您可以在声明变量之前就使用它：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您可以使用 carName
+var carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li>通过 let 定义的变量不会被提升到顶端。在声明 let 变量之前就使用它会导致 ReferenceError。变量从块的开头一直处于“暂时死区”，直到声明为止：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您不可以使用 carName
+let carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">// 在此处，您可以使用 carName
-var carName;
-</code></pre>
-<ul>
-<li>通过 let 定义的变量不会被提升到顶端。在声明 let 变量之前就使用它会导致 ReferenceError。变量从块的开头一直处于“暂时死区”，直到声明为止：</li>
-</ul>
-<pre class=" language-JavaScript"><code class="language-JavaScript">// 在此处，您不可以使用 carName
-let carName;
-</code></pre>
 
                 
             </div>
@@ -987,12 +960,12 @@ let carName;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Study/">
-                        <span class="chip bg-color">Study</span>
-                    </a>
-                    
                     <a href="/tags/Android/">
                         <span class="chip bg-color">Android</span>
+                    </a>
+                    
+                    <a href="/tags/Study/">
+                        <span class="chip bg-color">Study</span>
                     </a>
                     
                 </div>
@@ -1279,7 +1252,7 @@ let carName;
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">1.4k</span>
+                        class="white-color">1.5k</span>
             
             
             
