@@ -404,21 +404,21 @@ JavaScript 能够以不同方式“显示”数据：
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-08-11
+                    2022-08-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    576
+                    751
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    3 Min
                 </div>
                 
 
@@ -468,7 +468,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript">document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>试一试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="重新声明"><a href="#重新声明" class="headerlink" title="重新声明"></a>重新声明</h2><ul>
+<h2 id="let"><a href="#let" class="headerlink" title="let"></a>let</h2><h3 id="重新声明"><a href="#重新声明" class="headerlink" title="重新声明"></a>重新声明</h3><ul>
 <li>允许在程序的任何位置使用 var 重新声明 JavaScript 变量：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
 &#x2F;&#x2F; 现在，x 为 10
 var x &#x3D; 6;
@@ -499,13 +499,31 @@ var x &#x3D; 6;     &#x2F;&#x2F; 不允许
   let x &#x3D; 8;   &#x2F;&#x2F; 允许
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h2 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h2><ul>
+<h3 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h3><ul>
 <li>通过 var 声明的变量会提升到顶端。您可以在声明变量之前就使用它：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您可以使用 carName
 var carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 <li>通过 let 定义的变量不会被提升到顶端。在声明 let 变量之前就使用它会导致 ReferenceError。变量从块的开头一直处于“暂时死区”，直到声明为止：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您不可以使用 carName
 let carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
+<h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
+&#x2F;&#x2F; 此处，x 为 10
+&#123; 
+  const x &#x3D; 6;
+  &#x2F;&#x2F; 此处，x 为 6
+&#125;
+&#x2F;&#x2F; 此处，x 为 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="JavaScript-const-变量必须在声明时赋值："><a href="#JavaScript-const-变量必须在声明时赋值：" class="headerlink" title="JavaScript const 变量必须在声明时赋值："></a>JavaScript const 变量必须在声明时赋值：</h3><h3 id="常量对象可以更改"><a href="#常量对象可以更改" class="headerlink" title="常量对象可以更改"></a>常量对象可以更改</h3><p>您可以更改常量对象的属性：</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 您可以创建 const 对象：
+const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
 
+&#x2F;&#x2F; 您可以更改属性：
+car.color &#x3D; &quot;White&quot;;
+
+&#x2F;&#x2F; 您可以添加属性：
+car.owner &#x3D; &quot;Bill&quot;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>但是您无法重新为常量对象赋值：</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
+car &#x3D; &#123;type:&quot;Volvo&quot;, model:&quot;XC60&quot;, color:&quot;White&quot;&#125;;    &#x2F;&#x2F; ERROR<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1252,7 +1270,7 @@ let carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">1.5k</span>
+                        class="white-color">1.6k</span>
             
             
             
