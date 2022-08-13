@@ -411,7 +411,7 @@ JavaScript 能够以不同方式“显示”数据：
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    751
+                    863
                 </div>
                 
 
@@ -515,15 +515,23 @@ let carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
 <h3 id="JavaScript-const-变量必须在声明时赋值："><a href="#JavaScript-const-变量必须在声明时赋值：" class="headerlink" title="JavaScript const 变量必须在声明时赋值："></a>JavaScript const 变量必须在声明时赋值：</h3><h3 id="常量对象可以更改"><a href="#常量对象可以更改" class="headerlink" title="常量对象可以更改"></a>常量对象可以更改</h3><p>您可以更改常量对象的属性：</p>
 <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 您可以创建 const 对象：
 const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
-
 &#x2F;&#x2F; 您可以更改属性：
 car.color &#x3D; &quot;White&quot;;
-
 &#x2F;&#x2F; 您可以添加属性：
-car.owner &#x3D; &quot;Bill&quot;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+car.owner &#x3D; &quot;Bill&quot;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>但是您无法重新为常量对象赋值：</p>
 <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
 car &#x3D; &#123;type:&quot;Volvo&quot;, model:&quot;XC60&quot;, color:&quot;White&quot;&#125;;    &#x2F;&#x2F; ERROR<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="常量数组可以更改"><a href="#常量数组可以更改" class="headerlink" title="常量数组可以更改"></a>常量数组可以更改</h3><p>您可以更改常量数组的元素：</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 您可以创建常量数组：
+const cars &#x3D; [&quot;Audi&quot;, &quot;BMW&quot;, &quot;porsche&quot;];
+&#x2F;&#x2F; 您可以更改元素：
+cars[0] &#x3D; &quot;Honda&quot;;
+&#x2F;&#x2F; 您可以添加元素：
+cars.push(&quot;Volvo&quot;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>但是您无法重新为常量数组赋值：</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">const cars &#x3D; [&quot;Audi&quot;, &quot;BMW&quot;, &quot;porsche&quot;];
+cars &#x3D; [&quot;Honda&quot;, &quot;Toyota&quot;, &quot;Volvo&quot;];    &#x2F;&#x2F; ERROR<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1270,7 +1278,7 @@ car &#x3D; &#123;type:&quot;Volvo&quot;, model:&quot;XC60&quot;, color:&quot;Whi
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">1.6k</span>
+                        class="white-color">1.7k</span>
             
             
             
