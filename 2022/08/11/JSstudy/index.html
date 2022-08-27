@@ -403,7 +403,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-08-14
+                    2022-08-25
                 </div>
                 
 
@@ -440,7 +440,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaScript-显示方案"><a href="#JavaScript-显示方案" class="headerlink" title="JavaScript 显示方案"></a>JavaScript 显示方案</h1><p>JavaScript 能够以不同方式“显示”数据：</p>
+                <h2 id="JavaScript-显示方案"><a href="#JavaScript-显示方案" class="headerlink" title="JavaScript 显示方案"></a>JavaScript 显示方案</h2><p>JavaScript 能够以不同方式“显示”数据：</p>
 <ul>
 <li>使用 window.alert() 写入警告框</li>
 <li>使用 document.write() 写入 HTML 输出</li>
@@ -464,7 +464,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h1 id="let"><a href="#let" class="headerlink" title="let"></a>let</h1><h2 id="重新声明"><a href="#重新声明" class="headerlink" title="重新声明"></a>重新声明</h2><ul>
+<h2 id="let"><a href="#let" class="headerlink" title="let"></a>let</h2><h3 id="重新声明"><a href="#重新声明" class="headerlink" title="重新声明"></a>重新声明</h3><ul>
 <li>允许在程序的任何位置使用 var 重新声明 JavaScript 变量：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
 &#x2F;&#x2F; 现在，x 为 10
 var x &#x3D; 6;
@@ -495,20 +495,20 @@ var x &#x3D; 6;     &#x2F;&#x2F; 不允许
   let x &#x3D; 8;   &#x2F;&#x2F; 允许
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h2 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h2><ul>
+<h3 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h3><ul>
 <li>通过 var 声明的变量会提升到顶端。您可以在声明变量之前就使用它：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您可以使用 carName
 var carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 <li>通过 let 定义的变量不会被提升到顶端。在声明 let 变量之前就使用它会导致 ReferenceError。变量从块的开头一直处于“暂时死区”，直到声明为止：<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 在此处，您不可以使用 carName
 let carName;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
-<h1 id="const"><a href="#const" class="headerlink" title="const"></a>const</h1><h2 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h2><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
+<h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var x &#x3D; 10;
 &#x2F;&#x2F; 此处，x 为 10
 &#123; 
   const x &#x3D; 6;
   &#x2F;&#x2F; 此处，x 为 6
 &#125;
 &#x2F;&#x2F; 此处，x 为 10<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="JavaScript-const-变量必须在声明时赋值："><a href="#JavaScript-const-变量必须在声明时赋值：" class="headerlink" title="JavaScript const 变量必须在声明时赋值："></a>JavaScript const 变量必须在声明时赋值：</h2><h2 id="常量对象可以更改"><a href="#常量对象可以更改" class="headerlink" title="常量对象可以更改"></a>常量对象可以更改</h2><p>您可以更改常量对象的属性：</p>
+<h3 id="JavaScript-const-变量必须在声明时赋值："><a href="#JavaScript-const-变量必须在声明时赋值：" class="headerlink" title="JavaScript const 变量必须在声明时赋值："></a>JavaScript const 变量必须在声明时赋值：</h3><h3 id="常量对象可以更改"><a href="#常量对象可以更改" class="headerlink" title="常量对象可以更改"></a>常量对象可以更改</h3><p>您可以更改常量对象的属性：</p>
 <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 您可以创建 const 对象：
 const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
 &#x2F;&#x2F; 您可以更改属性：
@@ -518,7 +518,7 @@ car.owner &#x3D; &quot;Bill&quot;;<span aria-hidden="true" class="line-numbers-r
 <p>但是您无法重新为常量对象赋值：</p>
 <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">const car &#x3D; &#123;type:&quot;porsche&quot;, model:&quot;911&quot;, color:&quot;Black&quot;&#125;;
 car &#x3D; &#123;type:&quot;Volvo&quot;, model:&quot;XC60&quot;, color:&quot;White&quot;&#125;;    &#x2F;&#x2F; ERROR<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="常量数组可以更改"><a href="#常量数组可以更改" class="headerlink" title="常量数组可以更改"></a>常量数组可以更改</h2><p>您可以更改常量数组的元素：</p>
+<h3 id="常量数组可以更改"><a href="#常量数组可以更改" class="headerlink" title="常量数组可以更改"></a>常量数组可以更改</h3><p>您可以更改常量数组的元素：</p>
 <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 您可以创建常量数组：
 const cars &#x3D; [&quot;Audi&quot;, &quot;BMW&quot;, &quot;porsche&quot;];
 &#x2F;&#x2F; 您可以更改元素：
