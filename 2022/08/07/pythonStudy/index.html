@@ -284,9 +284,9 @@
 </blockquote>
 <p>dir0文件夹下有file1.py、file2.py两个文件和dir3、dir4两个子文件夹，dir3中有file3.py文件，dir4中有file4.py文件。</p>
 <h4 id="1-导入同级模块"><a href="#1-导入同级模块" class="headerlink" title="1.导入同级模块"></a>1.导入同级模块</h4><p>python导入同级模块（在同一个文件夹中的py文件）直接导入即可。<br>import xxx<br>如在file1.py中想导入file2.py，注意无需加后缀”.py”：</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import file2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> file2<br></code></pre></td></tr></table></figure>
 <p>使用file2中函数时需加上前缀”file2.”，即：</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">file2.fuction_name()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Python">file2.fuction_name()<br></code></pre></td></tr></table></figure>
 <h4 id="2-导入下级模块"><a href="#2-导入下级模块" class="headerlink" title="2.导入下级模块"></a>2.导入下级模块</h4><p>导入下级目录模块也很容易，需在下级目录中新建一个空白的__init__.py文件再导入：</p>
 <p>from dirname import xxx<br>如在file1.py中想导入dir3下的file3.py，首先要在dir3中新建一个空白的__init__.py文件。</p>
 <blockquote>
@@ -295,23 +295,16 @@
 <p>再使用如下语句：</p>
 <ul>
 <li><p>plan A</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">from dir3 import file3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">from</span> dir3 <span class="hljs-keyword">import</span> file3<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>plan B</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import dir3.file3
-# import dir3.file3 as df3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> dir3.file3<br><span class="hljs-comment"># import dir3.file3 as df3</span><br></code></pre></td></tr></table></figure>
 <p>但使用第二种方式则下文需要一直带着路径dir3书写，较为累赘，建议可以另起一个别名。</p>
 </li>
 </ul>
 <h4 id="3-导入上级模块"><a href="#3-导入上级模块" class="headerlink" title="3.导入上级模块"></a>3.导入上级模块</h4><p>要导入上级目录下模块，可以使用sys.path： 　</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import sys 
-sys.path.append(&quot;..&quot;) 
-import xxx　<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">如在file4.py中想引入import上级目录下的file1.py：
-
-import sys 
-sys.path.append(&quot;..&quot;) 
-import file1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> sys <br>sys.path.append(<span class="hljs-string">&quot;..&quot;</span>) <br><span class="hljs-keyword">import</span> xxx　<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Python">如在file4.py中想引入<span class="hljs-keyword">import</span>上级目录下的file1.py：<br><br><span class="hljs-keyword">import</span> sys <br>sys.path.append(<span class="hljs-string">&quot;..&quot;</span>) <br><span class="hljs-keyword">import</span> file1<br></code></pre></td></tr></table></figure>
 <p>sys.path的作用：当使用import语句导入模块时，解释器会搜索当前模块所在目录以及sys.path指定的路径去找需要import的模块，所以这里是直接把上级目录加到了sys.path里。</p>
 <p>“..”的含义：等同于linux里的’..’，表示当前工作目录的上级目录。实际上python中的’.’也和linux中一致，表示当前目录。</p>
 <h4 id="4-导入隔壁文件夹下的模块"><a href="#4-导入隔壁文件夹下的模块" class="headerlink" title="4.导入隔壁文件夹下的模块"></a>4.导入隔壁文件夹下的模块</h4><p>如在file4.py中想引入import在dir3目录下的file3.py。</p>
@@ -321,9 +314,7 @@ import file1<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
 <p>– dir<br>　　| file1.py<br>　　| file2.py<br>　　| dir3<br>　　　| <strong>init</strong>.py<br>　　　| file3.py<br>　　| dir4<br>　　　| file4.py</p>
 </blockquote>
 <p>同时也要将上级目录加到sys.path里：</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import sys
-sys.path.append(&quot;..&quot;)
-from dir3 import file3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> sys<br>sys.path.append(<span class="hljs-string">&quot;..&quot;</span>)<br><span class="hljs-keyword">from</span> dir3 <span class="hljs-keyword">import</span> file3<br></code></pre></td></tr></table></figure>
 <p>####5.常见错误及import原理：<br>在使用直接从上级目录引入模块的操作时：<br>from .. import xxx<br>经常会报错:<br>ValueError: attempted relative import beyond top-level package</p>
 <p>这是由于相对导入时，文件夹实质上充当的是package，也就是包的角色（比如我们常用的numpy、pandas都是包）。如果python解释器没有认同该文件夹是package，那么这就是一个普通的文件夹，无法实现相对导入。</p>
 <p>文件夹作为package需要满足如下两个条件：</p>
@@ -354,11 +345,7 @@ from dir3 import file3<span aria-hidden="true" class="line-numbers-rows"><span><
 <blockquote>
 <p>一些问题 :<br>如果还是无法安装第三方库或者很慢，则观察自己的源是否为上述添加的源，如果还夹杂着别的源，先进行恢复默认源（上述操作），然后再进行添加国内源（上述操作）。</p>
 </blockquote>
-<h2 id="pip"><a href="#pip" class="headerlink" title="pip"></a>pip</h2><h3 id="升级所有包"><a href="#升级所有包" class="headerlink" title="升级所有包"></a>升级所有包</h3><pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import pkg_resources
-from subprocess import call
-
-for packages in [dist.project_name for dist in pkg_resources.working_set]:
-    call(&quot;pip3 install --upgrade &quot; + &#39;&#39;.join(packages) + &#39; --user&#39;, shell&#x3D;True)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="pip"><a href="#pip" class="headerlink" title="pip"></a>pip</h2><h3 id="升级所有包"><a href="#升级所有包" class="headerlink" title="升级所有包"></a>升级所有包</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> pkg_resources<br><span class="hljs-keyword">from</span> subprocess <span class="hljs-keyword">import</span> call<br><br><span class="hljs-keyword">for</span> packages <span class="hljs-keyword">in</span> [dist.project_name <span class="hljs-keyword">for</span> dist <span class="hljs-keyword">in</span> pkg_resources.working_set]:<br>    call(<span class="hljs-string">&quot;pip3 install --upgrade &quot;</span> + <span class="hljs-string">&#x27;&#x27;</span>.join(packages) + <span class="hljs-string">&#x27; --user&#x27;</span>, shell=<span class="hljs-literal">True</span>)<br></code></pre></td></tr></table></figure>
 <h2 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a>Jupyter Notebook</h2>
                 
               </div>
@@ -475,6 +462,34 @@ for packages in [dist.project_name for dist in pkg_resources.working_set]:
             </div>
 
             
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5X8zgUccWBs9FiKoH3CPfbCR-gzGzoHsz","appKey":"W4YgpokeBC5Q4ro7koacgv02","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
           </article>
         </div>
       </div>

@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          329 words
+          361 words
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          3 mins
+          4 mins
         
       </span>
     
@@ -281,8 +281,8 @@
 <p>解决办法：</p>
 <ul>
 <li>Step1： 打开MySQL Workbench，在已有连接上执行Query：</li>
-<li>Step2：先执行如下代码，更新用户密码：<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">USER</span> <span class="token string">'root'</span><span class="token variable">@'localhost'</span> IDENTIFIED <span class="token keyword">WITH</span> mysql_native_password <span class="token keyword">BY</span> <span class="token string">'password'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li>Step3：再执行如下代码，刷新权限表：<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">flush <span class="token keyword">privileges</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>Step2：先执行如下代码，更新用户密码：<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">USER</span> <span class="hljs-string">&#x27;root&#x27;</span>@<span class="hljs-string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="hljs-keyword">WITH</span> mysql_native_password <span class="hljs-keyword">BY</span> <span class="hljs-string">&#x27;password&#x27;</span><br></code></pre></td></tr></table></figure></li>
+<li>Step3：再执行如下代码，刷新权限表：<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">flush privileges<br></code></pre></td></tr></table></figure></li>
 <li>Step4：succeess</li>
 </ul>
 
@@ -401,6 +401,34 @@
             </div>
 
             
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5X8zgUccWBs9FiKoH3CPfbCR-gzGzoHsz","appKey":"W4YgpokeBC5Q4ro7koacgv02","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
           </article>
         </div>
       </div>
