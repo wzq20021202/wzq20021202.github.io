@@ -23,11 +23,13 @@
 <meta property="og:site_name" content="wzq&#39;s blogs">
 <meta property="og:description" content="报错kettle连接mysql8.0以上版本1、下载mysql8.0的jar驱动https:&#x2F;&#x2F;mvnrepository.com&#x2F;artifact&#x2F;mysql&#x2F;mysql-connector-java&#x2F;8.0.282、将下载好的mysql的驱动放到kettle安装文件中的lib下面，然后重启Spoon3、连接的两种方式第一种方式：(亲测可用)数据库类型选择Generic Database自定义连">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://wzq20021202.github.io/image/Snipaste_2022-10-13_22-30-39.png">
 <meta property="article:published_time" content="2022-10-13T14:27:41.331Z">
-<meta property="article:modified_time" content="2022-10-23T13:27:01.054Z">
+<meta property="article:modified_time" content="2022-10-23T13:32:44.610Z">
 <meta property="article:author" content="wzq">
 <meta property="article:tag" content="Kettle">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://wzq20021202.github.io/image/Snipaste_2022-10-13_22-30-39.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -291,7 +293,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h1><h2 id="kettle连接mysql8-0以上版本"><a href="#kettle连接mysql8-0以上版本" class="headerlink" title="kettle连接mysql8.0以上版本"></a>kettle连接mysql8.0以上版本</h2><p>1、下载mysql8.0的jar驱动<br><a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28">https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28</a><br>2、将下载好的mysql的驱动放到kettle安装文件中的lib下面，然后重启Spoon<br>3、连接的两种方式<br>第一种方式：(亲测可用)<br>数据库类型选择<kbd>Generic Database</kbd><br><a href="../image/Snipaste_2022-10-13_22-30-39.png"></a><br>自定义连接URL填入：jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;sys?useUnicode&#x3D;true&amp;characterEncoding&#x3D;UTF-8&amp;useSSL&#x3D;false&amp;serverTimezone&#x3D;Asia&#x2F;Shanghai&amp;zeroDateTimeBehavior&#x3D;CONVERT_TO_NULL（注：sys是你的数据库名称）<br>自定义驱动类名称填入：com.mysql.cj.jdbc.Driver</p>
+                <h1 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h1><h2 id="kettle连接mysql8-0以上版本"><a href="#kettle连接mysql8-0以上版本" class="headerlink" title="kettle连接mysql8.0以上版本"></a>kettle连接mysql8.0以上版本</h2><p>1、下载mysql8.0的jar驱动<br><a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28">https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28</a><br>2、将下载好的mysql的驱动放到kettle安装文件中的lib下面，然后重启Spoon<br>3、连接的两种方式<br>第一种方式：(亲测可用)<br>数据库类型选择<kbd>Generic Database</kbd><br><img src="/../image/Snipaste_2022-10-13_22-30-39.png" srcset="/img/loading.gif" lazyload><br>自定义连接URL填入：jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;sys?useUnicode&#x3D;true&amp;characterEncoding&#x3D;UTF-8&amp;useSSL&#x3D;false&amp;serverTimezone&#x3D;Asia&#x2F;Shanghai&amp;zeroDateTimeBehavior&#x3D;CONVERT_TO_NULL（注：sys是你的数据库名称）<br>自定义驱动类名称填入：com.mysql.cj.jdbc.Driver</p>
 <p>第二种方式：在kettle的安装目录下data-integration\simple-jndi\jdbc.properties加入jdbc的连接信息</p>
 <blockquote>
 <p>MYSQL8_DB&#x2F;type&#x3D;javax.sql.DataSource<br>MYSQL8_DB&#x2F;driver&#x3D;com.mysql.cj.jdbc.Driver<br>MYSQL8_DB&#x2F;url&#x3D;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;sys?useUnicode&#x3D;true&amp;characterEncoding&#x3D;utf8&amp;useSSL&#x3D;false&amp;serverTimezone&#x3D;GMT &#x2F;&#x2F;（注：sys是你的数据库名称）<br>MYSQL8_DB&#x2F;user&#x3D;root &#x2F;&#x2F;（用户名）<br>MYSQL8_DB&#x2F;password&#x3D;root &#x2F;&#x2F;（密码）</p>
