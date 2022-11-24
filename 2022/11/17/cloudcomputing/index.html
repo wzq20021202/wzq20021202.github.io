@@ -1,0 +1,803 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="wzq">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="大题根据个人使用情况，请多角度分析典型的云应用？“云应用”是“云计算”概念的子集，是云计算技术在应用层的体现。云应用和云计算最大的不同在于，云计算作为一种宏观技术发展概念而存在，云应用则是直接面对客户案决实际问题的产品。云应用遍及各个方面，典型的云应用有云存储、云服务以及云物联。 1.云存储 是在云计算概念上延伸和发展出来的一个新的概念，是一种新兴的网络存储技术，是指通过集群应用、网络技术或分布式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cloudcomputing期末复习">
+<meta property="og:url" content="https://wzq20021202.github.io/2022/11/17/cloudcomputing/index.html">
+<meta property="og:site_name" content="wzq&#39;s blogs">
+<meta property="og:description" content="大题根据个人使用情况，请多角度分析典型的云应用？“云应用”是“云计算”概念的子集，是云计算技术在应用层的体现。云应用和云计算最大的不同在于，云计算作为一种宏观技术发展概念而存在，云应用则是直接面对客户案决实际问题的产品。云应用遍及各个方面，典型的云应用有云存储、云服务以及云物联。 1.云存储 是在云计算概念上延伸和发展出来的一个新的概念，是一种新兴的网络存储技术，是指通过集群应用、网络技术或分布式">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-11-17T13:20:10.173Z">
+<meta property="article:modified_time" content="2022-11-24T03:03:44.987Z">
+<meta property="article:author" content="wzq">
+<meta property="article:tag" content="cloudcomputing">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>cloudcomputing期末复习 - wzq&#39;s blogs</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"wzq20021202.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="cloudcomputing期末复习"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-17 21:20" pubdate>
+          November 17, 2022 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          13k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          112 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> views
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">cloudcomputing期末复习</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    Last updated on November 24, 2022 am
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h1><h2 id="根据个人使用情况，请多角度分析典型的云应用？"><a href="#根据个人使用情况，请多角度分析典型的云应用？" class="headerlink" title="根据个人使用情况，请多角度分析典型的云应用？"></a>根据个人使用情况，请多角度分析典型的云应用？</h2><p>“云应用”是“云计算”概念的子集，是云计算技术在应用层的体现。云应用和云计算最大的不同在于，云计算作为一种宏观技术发展概念而存在，云应用则是直接面对客户案决实际问题的产品。云应用遍及各个方面，典型的云应用有云存储、云服务以及云物联。</p>
+<h3 id="1-云存储"><a href="#1-云存储" class="headerlink" title="1.云存储"></a>1.云存储</h3><p> 是在云计算概念上延伸和发展出来的一个新的概念，是一种新兴的网络存储技术，是指通过集群应用、网络技术或分布式文件系统等功能，将网络中大量各种不同类型的存储设备通过应用软件集合起来协同工作，共同对外提供数据存储和业务访问功能的一个系统。<br>典型的云存储包括Dropbox、百度云、阿里云、网盘等，这些应用可以帮助用户存储资料，例如大容量文件就可以通过云存储留给他人下载，节省了时间和金钱，有很好的便携性。<br>   根据我个人使用的情况来看，首先，我觉得云存储这个云应用就是帮助我们将文件存储到云端，可以不占用我们电脑以及手机的内存。我本人使用的是百度网盘，当我的手机或电脑文件过多时，我就将一部分图片以及文件等资源存储的百度网盘里，按照一定规律分个类，不仅不占用手机电脑内存，找起来也比较方便。<br>其次，使用云存储，我们也能够实现资源共享，以及在其他设备获取资源。我们可以通过网盘下载别人分享的大容量文件，别人分享的资源，当在其他设备上需要某些资源时，只要登录网盘就能实现异地资源互通。<br>而且，我们将重要资源存储到云端，当设备出现故障或者遭受病毒时，我们也不用担心这些重要资源的丢失，一定程度上，云存储也保障了我们的资源存储安全。但是，现在的云存储免费提供给我们的存储空间也是有限的，当我们需求量不高时，也是够用的。</p>
+<h3 id="2-云服务，"><a href="#2-云服务，" class="headerlink" title="2.云服务，"></a>2.云服务，</h3><p>目前很多公司都有自己的云服务产品，例如Google、微软、亚马逊等。典型的云服务有微软的Hotmail、Google的gmail、苹果的iCloud等。这项服务主要以邮箱为账号，实现用户登录账号后内容在线同步的效果。当然，邮箱也可以达到这个效果，在很多没有U盘的情况下，人们经常会把文件发给自己的邮箱，以方便回家阅览，这也是云服务最早的应用，可以实现在线运行，随时随地接收文件。<br>   根据我个人使用的情况来看，云服务这个应用在我们换手机时显现的好处就非常明显，如果我们的手机登录了我们自己的账号，开启了账户云服务，将需要移到新手机的资源，例如联系人，图库等存入，到新的设备登入账号，便能将信息存储到新的设备中。还有我们办公用的WPS，他也有云服务，当我们开启云服务功能，可以将我们文件备份到云端，无论我们在手机，平板还是电脑上，只要登入账号就能继续查看与修改，它是同步的。</p>
+<h3 id="3-云物联，"><a href="#3-云物联，" class="headerlink" title="3.云物联，"></a>3.云物联，</h3><p>“物联网就是物物相连的互联网”有两层意思：第一，物联网的核心和基础的然是互联网，是在互联网基础上延伸和扩展的网络；第二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信。云物联是通过使用RFID、传感器、红外感应器、全球定位系统、激光扫描器等信息采集设备，按约定的协议。把任何物品与互联网连接起来，进行信息交换和通信，以实现智能化识别、定位、跟踪、监控和管理的一种网络。<br>   根据我个人使用的情况来看 ，云物联应用在各个方面，比如智能家居，可穿戴设备，智能安全，制造业，农业等。就比如我平时佩戴的智能手表，智能秤等，就是将这些物品与互联网相连，这些物品收集采集一些信息，在互联网的基础上，进行传递通信，然后进行智能处理。还有在许多行业里，将物品与互联网相连，不仅能实时了解情况，还能在网络端进行指令发布，然后远程进行处理，在工业上的应用还能够减少许多人工成本。</p>
+<h2 id="简述云基础设施机制，并根据个人情况及行业应用对其中两类做出详细描述？"><a href="#简述云基础设施机制，并根据个人情况及行业应用对其中两类做出详细描述？" class="headerlink" title="简述云基础设施机制，并根据个人情况及行业应用对其中两类做出详细描述？"></a>简述云基础设施机制，并根据个人情况及行业应用对其中两类做出详细描述？</h2><p>云基础设施机制是云环境的基础构件块，它是形成云技术架构基础的主要构件。云基础设施机制主要针对计算、存储、网络，包括虚拟网络边界、虚拟服务器、云存储设备和就绪环境。</p>
+<h3 id="1-虚拟网络边界，"><a href="#1-虚拟网络边界，" class="headerlink" title="1.虚拟网络边界，"></a>1.虚拟网络边界，</h3><p>是由提供和控制数据中心连接的网络设备建立，一般是作为虚拟化环境部署的。例如虚拟防火墙、虚拟网络。该机制被定义为将一个网络环境与通信网络的其他部分隔开，形成一个虚拟网络边界，包含并隔离了一组相关的基于云的IT资源，这些资源在物理上可能是分布式的。该机制可被用于将云中的 IT 资源与非授权用户隔离;将云中的 IT 资源与非用户隔离;将云中的 IT 资源与云用户隔离;控制被隔离 IT 资源的可用带宽。</p>
+<h3 id="2-虚拟服务器"><a href="#2-虚拟服务器" class="headerlink" title="2.虚拟服务器"></a>2.虚拟服务器</h3><p> 服务器通常通过虚拟机监视器或虚拟化平台来实现硬件设备的抽象、资源的调度和虚拟机的管理。虚拟服务器是一种模拟物理服务器的虚拟化软件。虚拟服务器需对服务器的CPU内存设备及I&#x2F;O分别实现虚拟化。虚拟服务器具有多实例，隔离性，封装性特性，具有实时迁移，快速部署，高兼容性，提高资源利用率，动态调度资源优点。</p>
+<h3 id="3-云存储设备"><a href="#3-云存储设备" class="headerlink" title="3.云存储设备"></a>3.云存储设备</h3><p>云存储设机制是指专门为基于云配置所设计的存储设备。这些设备的实例可以被虚拟化。</p>
+<h3 id="4-就绪环境"><a href="#4-就绪环境" class="headerlink" title="4.就绪环境"></a>4.就绪环境</h3><p>就绪环境机制是 PaaS 云交付模型的定义组件，基于云平台，已有一组安装好的 IT 资源，可以被云用户使用和定制。云用户利用就绪环境机制进行远程开发及配置自身的服务和应用程序。</p>
+<h3 id="详细描述："><a href="#详细描述：" class="headerlink" title="详细描述："></a>详细描述：</h3><h4 id="①虚拟网络边界"><a href="#①虚拟网络边界" class="headerlink" title="①虚拟网络边界"></a>①虚拟网络边界</h4><p>就我个人使用情况，平时能够接触到最多的虚拟网络边界就在教室机房中，只有连接了校园网才能访问学校里的一些网站，而我们使用自己的网络，即未被学校授权的网络就会无法访问获取资料，这就体现了这个机制的一个作用，将云中的IT资源与非授权用户隔离。<br>就行业应用而言，传统的防火墙较多的部分划分，导致企业需要部署多台独立防火墙，这会使企业建立防火墙和维护成本较高而且放置的多个独立防火墙将占用较多的机架空间。所以许多企业都会建立虚拟防火墙，虚拟防火墙可以把一个防火墙设备划分成多台虚拟防火墙，而且每台虚拟防火墙之间相互独立，降低了企业的投资成本，也可以通过虚拟化统一管理平台可以实现多个防火墙的统一管理。虚拟专用网络也帮助企业使用身份验证链接来帮助他们确保只有自己的授权用户才能连接自己的网络，使用VPN，公司可以确保自己公司机密不会被盗取等，有一定的安全保障。</p>
+<h4 id="②虚拟服务器"><a href="#②虚拟服务器" class="headerlink" title="②虚拟服务器"></a>②虚拟服务器</h4><p>就我个人使用情况，虚拟服务器和虚拟机是同义词，当我想要下载一些大的软件，或者配置要求高的软件时，但是自己电脑本身服务器硬件又不够，我就会利用虚拟服务器来模拟一台电脑来下载需要的内容，还有下载一个游戏或者完成一些实验，当所需系统不同时，我又不会去拥有多台物理设备，这时就可以利用虚拟服务器来创建虚拟机进行应用。<br>就行业应用而言，多个云用户可以共享一个物理服务器，企业使用虚拟服务器能够在线上进行业务工作，能够提升企业的业务效率。而且每个虚拟服务器可以可以存储大量IT资源，相互独立，一个崩溃不会影响到其他虚拟服务器，而且企业使用虚拟服务器后，企业的数据及业务数据都将存储在虚拟服务器中，方便集中管理，无需购买过多的物理服务器，这减少了企业在硬件上的投入。而且虚拟服务器的快速部署优点，让以往需要耗费十几小时甚至几天的时间，只需要十几分钟来部署一个应用，通过部署一个封装好的操作系统和应用程序的虚拟机，只需复制，启动和配置虚拟机就能完成，而且不易出错，为企业节省了不少的时间成本。</p>
+<h2 id="简要介绍Virtual-Server的安装及注意事项。"><a href="#简要介绍Virtual-Server的安装及注意事项。" class="headerlink" title="简要介绍Virtual Server的安装及注意事项。"></a>简要介绍Virtual Server的安装及注意事项。</h2><h3 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h3><p>首先在VirtualBox官方网站地址–<a target="_blank" rel="noopener" href="https://www.virtualbox.org/%EF%BC%8C%E4%B8%8B%E8%BD%BDvirtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%8C%E4%B8%8B%E8%BD%BD%E5%AE%8C%E6%88%90%E5%90%8E%E5%BE%97%E5%88%B0%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%8C%E5%87%BB%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%85%A5virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%95%8C%E9%9D%A2%EF%BC%8C%E7%82%B9%E5%87%BB%E4%B8%8B%E4%B8%80%E6%AD%A5%E7%BB%A7%E7%BB%AD%E5%AE%89%E8%A3%85%EF%BC%8C%E8%BF%9B%E5%85%A5%E5%88%B0virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E9%80%89%E6%8B%A9%E7%95%8C%E9%9D%A2%EF%BC%8C%E5%AF%B9%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E8%BF%9B%E8%A1%8C%E6%9B%B4%E6%94%B9%EF%BC%8C%E5%88%9D%E5%A7%8B%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E5%9C%A8C%E7%9B%98%EF%BC%8C%E4%B8%80%E7%9B%B4%E9%BB%98%E8%AE%A4%E4%BC%9A%E4%BD%BF%E7%94%B5%E8%84%91C%E7%9B%98%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E4%B8%8D%E5%A4%9F%E3%80%82%E6%8E%A5%E7%9D%80%E5%88%B0%E4%BA%86%E8%87%AA%E5%AE%9A%E5%AE%89%E8%A3%85%E9%80%89%E6%8B%A9%E5%8A%9F%E8%83%BD%EF%BC%8C%E5%8F%AF%E5%85%A8%E9%80%89%E6%96%87%E4%BB%B6%EF%BC%8C%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BB%E4%B8%8B%E4%B8%80%E6%AD%A5%EF%BC%8C%E5%BE%97%E5%88%B0%E8%AD%A6%E5%91%8A%E7%BD%91%E7%BB%9C%E7%95%8C%E9%9D%A2%E8%AF%A2%E9%97%AE%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E5%AE%89%E8%A3%85%EF%BC%8C%E9%80%89%E6%8B%A9%E6%98%AF%EF%BC%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E7%82%B9%E5%87%BB%E5%AE%89%E8%A3%85%EF%BC%8C%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%EF%BC%8C%E7%AD%89%E5%BE%85%E5%87%A0%E5%88%86%E9%92%9F%E5%B0%B1%E5%AE%8C%E6%88%90%E4%BA%86%E3%80%82">https://www.virtualbox.org/，下载virtualbox虚拟机安装包，下载完成后得到安装文件，双击就可以进入virtualbox虚拟机安装界面，点击下一步继续安装，进入到virtualbox虚拟机安装位置选择界面，对安装位置进行更改，初始安装位置在C盘，一直默认会使电脑C盘存储空间不够。接着到了自定安装选择功能，可全选文件，然后点击下一步，得到警告网络界面询问是否立即安装，选择是，下一步点击安装，进行安装，等待几分钟就完成了。</a></p>
+<h3 id="虚拟机新建过程："><a href="#虚拟机新建过程：" class="headerlink" title="虚拟机新建过程："></a>虚拟机新建过程：</h3><p>1、点击新建，输入虚拟电脑的名称、类型和版本<br>2、设置内存大小，我设置为1024M，然后点击下一步。<br>3、选择虚拟硬盘，点击创建。<br>4、选择创建虚拟硬盘，点击下一步。<br>5、选择动态分配，点击下一步。<br>6、设置虚拟硬盘位置和大小，点击下一步。<br>7、点击创建，虚拟机已经新建完成了，接下来需要在虚拟机中安装系统。</p>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>1.在官网下载安装包时，需要选择自己电脑配置适配的，一开始我选的Virtual Serve7.0但是安装失败，换了6.x就可以了<br>2.安装时要注意安装路径<br>3.使用虚拟机时，可以给虚拟机备份，以免日后非正常关闭虚拟机引起数据库的错误可以及时的恢复</p>
+<h2 id="详细介绍云安全防护策略，并根据个人应用过程中出现的问题给出有效建议。"><a href="#详细介绍云安全防护策略，并根据个人应用过程中出现的问题给出有效建议。" class="headerlink" title="详细介绍云安全防护策略，并根据个人应用过程中出现的问题给出有效建议。"></a>详细介绍云安全防护策略，并根据个人应用过程中出现的问题给出有效建议。</h2><h3 id="详细介绍云安全防护策略："><a href="#详细介绍云安全防护策略：" class="headerlink" title="详细介绍云安全防护策略："></a>详细介绍云安全防护策略：</h3><p>云安全涉及的关键技术及风险应对策略包括基础设施安全、数据安全、应用安全和虚拟化安全4个方面。</p>
+<h4 id="1-基础设施安全"><a href="#1-基础设施安全" class="headerlink" title="1.基础设施安全"></a>1.基础设施安全</h4><p>云计算模式的基础是云基础设施，承载服务的应用和平台等均建立在云基础设施上，确保云计算环境中用户数据和应用安全的基础是要保证服务的底层支撑体系(即云基础设施)的安全和可信。确保基础设施层的安全可以从六个方面进行考虑：①数据可控以及数据隔离②综合考虑数据中心的软&#x2F;硬件部署③建立安全的远程管理机制④选择安全的虚拟化厂商以及成熟的技术⑤建立、健全IT行业法规⑥针对突然的服务中断等不可抗拒新因素采取异地容灾策略</p>
+<h4 id="2-数据安全"><a href="#2-数据安全" class="headerlink" title="2.数据安全"></a>2.数据安全</h4><p>企业数据安全和隐私保护是云用户最关心的安全服务目标，无论是云用户还是云服务提供商，都应避免数据丢失和被窃，不管使用哪种云计算的服务模式(SaaS&#x2F;Paas&#x2F;Ia(5)，数据安全都变得越来越重要。从数据安全生命周期和云应用数据流程综合考虑，针对①数据传输安全、②数据存储和③数据残留等云数据安全敏感阶段进行关键技术的分析。<br>①数据传输安全 数据安全传输防护策略是首先对传输的数据进行加密，其次使用安全传输协议SSL和VPN进行数据传输。<br>②数据存储  云用户在云服务提供商存储数据时存在数据滥用、存储位置隔离、灾难恢复、数据审计等安全风险。<br>(1)对于IaaS应用，可以采用静止数据加密的方式防止被云服务提供商、恶意邻居租户及某些应用滥用<br>(2)对于数据存储位置，云用户要坚持一个关于数据具体位置的基本原则，并在服务水平协议SLA和合同中约定。<br>(3)采用“数据标记”、单租户专用数据平台实现数据隔离，防止数据被非法访问，但Paas和Saas应用为了实现可扩展、可用性、管理以及运行效率等方面的“经济性”，唯一可行的办法是建立私有云，不要把任何重要的或者敏感的数据放到公有云中。<br>(4)采用数据多各份的方式来实现灾难恢复，通过外部审计和安全认证来实现数据完整性和可用性。<br>③数据残留 数据残留是数据在被以某种形式擦除后所残留的物理表现，存储介质被擦除后可能留有一些物理特性使数据能够被重建。在云计算环境中，数据残留有可能会无意地泄露敏感信息。因此，云服务提供商应通过销毁加密数据相关介质、销毁存储介质、磁盘擦拭、内容发现等技术和方法来保证数据的完整清除。</p>
+<h4 id="3-应用安全"><a href="#3-应用安全" class="headerlink" title="3.应用安全"></a>3.应用安全</h4><p>云环境的灵活性、开放性以及公众可用性等特性给应用安全带来了很多挑战，因此云提供商在云主机上部署的Web应用程序应当充分考虑来自互联网的威胁。<br>①终端客户安全<br>·在云客户端上部署反恶意软件、防病毒、个人防火墙以及IPS类型安全软件，并开启各项防御功能。<br>·云用户应该采取必要措施保护浏览器免受攻击，在云环境中实现端到端的安全。云用户应使用自动更新功能，定期完成浏览器的打补丁和更新工作。<br>·对于企业客户，应该从制度上规定连接云计算应用的计算机禁止安装虚拟机，并且对计算机进行定期检查。<br>②SaaS应用安全<br>SaaS应用提供给用户的能力是使用服务商运行在云基础设施之上的应用，用户使用各种客户端设备通过浏览器来访问应用。用户并不管理或控制底层的云基础设施。在SaaS服务模式下，提供商应最大限度地确保提供给客户的应用程序和组件安全，客户端只负责用户与访问管理安全，所以在选择SaaS提供商前要几个方面对其进行安全评估。<br>③PaaS应用安全<br>PaaS云提供商提供给用户的能力是在云基础设施之上部署用户创建或采购的应用，这些应用使用服务商支持的编程语言或工具开发，用户并不管理或控制底层的云基础设施，包括网络、服务器、操作系统、存储等，但是可以控制部署的应用以及应用主机的某个环境配置。PaaS应用安全包含两个层次，即PaaS平台自身的安全和客户部署在PaaS平台上应用的安全。</p>
+<h4 id="4-虚拟化安全"><a href="#4-虚拟化安全" class="headerlink" title="4.虚拟化安全"></a>4.虚拟化安全</h4><p>虚拟化对于云计算是至关重要的，而基于虚拟化技术的云计算主要存在两个方面的安全风险，一个是虚拟化软件的安全；另一个是使用虚拟化技术的虚拟服务器的安全。<br>·虚拟化软件层直接部署于裸机之上，提供能够创建、运行和销毁虚拟服务器的能力。虚拟化软件层的完整性和可用性对保证基于虚拟化技术构建的公有云的完整性和可用性是最重要的，也是最关键的。需要（1）选择无漏洞的虚拟化软件(2)必须严格限制任何未经授权的用户访问虚拟化软件层。<br>·虚拟服务器位于虚拟化软件之上，对物理服务器的安全原理与实践也可以被运用到虚拟服务器上，当然需要兼顾虚拟服务器的特点。需要(1)选择具有TPM安全模块的物理服务器；选用多核并支持虚拟技术的处理器(2)在构建服务器时，应为每台虚拟服务器分配一个独立的硬盘分区(3)虚拟服务器之间及其物理主机之间通过VLAN和IP进行网络逻辑隔离，服务器之间通过VPN进行网络连接。<br>(4)对虚拟服务器的运行状态进行严密的监控，不需要运行的虚拟机应当立即关闭。</p>
+<h4 id="5-身份识别和访问管理"><a href="#5-身份识别和访问管理" class="headerlink" title="5.身份识别和访问管理"></a>5.身份识别和访问管理</h4><p>身份识别和访问管理系统能够对服务和资源的访问及权限进行管理。在一个租户下，通过这个可以控制组织内不同用户及用户组对资源和访问的控制权限，从而保证数据和信息的安全性。那么对于云计算平台的IAM，主要从用户管理、角色管理、权限管理、安全凭证管理几个方面体现其管理和控制。</p>
+<h4 id="6-操作系统安全"><a href="#6-操作系统安全" class="headerlink" title="6.操作系统安全"></a>6.操作系统安全</h4><p>在云平台中的操作系统，为了避免病毒及黑客攻击，需要及时更新系统补丁，以保护和防止数据泄露。对于公有云，云平台可以提供操作系统安全补丁服务；对于私有云，则需要管理员借助自动化方式集中对补丁进行分级分发。</p>
+<h4 id="7-操作审计"><a href="#7-操作审计" class="headerlink" title="7.操作审计"></a>7.操作审计</h4><p>审计是一项支持用户进行监管、合规性检查、操作审核和风险审核的模块。审计功能可以记录日志、持续监控，并保留与整个基础设施中的操作相关的账户活动。它提供账户活动的事件历史记录，这些活动包括通过管理控制台、命令行工具和其他服务执行的操作。这一事件历史记录可以简化安全性分析、资源更改跟踪和故障排除工作。</p>
+<h3 id="根据个人应用过程中出现的问题给出有效建议："><a href="#根据个人应用过程中出现的问题给出有效建议：" class="headerlink" title="根据个人应用过程中出现的问题给出有效建议："></a>根据个人应用过程中出现的问题给出有效建议：</h3><p>1.我认为在个人应用过程中，首先我们应该提前做好措施避免我们设备上安全漏洞被成功利用。需要及时更新系统补丁，以保护和防止数据泄露。我们应该在自己的云客户端上部署一些防病毒反恶意软件的防火墙，我们还需要对自己的计算机定期进行检查。<br>2.对于数据安全，一些重要的信息，像自己的证件号，密码之类，必须存储在数据库中进行适当加密，隐私安全是最重要的，云计算账户的泄露、意外泄露或其他泄露行为。这些高度特权和敏感的帐户如果被遭到破坏，可能会导致严重的后果。从网络钓鱼和凭证填充到薄弱或被盗凭证，再到不正确的编码，账户泄露可能导致数据泄露和服务中断。我们应尽量避免数据丢失和被盗窃，数据相关的系统更改不安全的默认配置，进行加固操作，进行核心数据主动防护，也可以设置入侵防御系统来保障数据安全。<br>3.还有对于数据存储的安全性及稳定性，为了避免造成一些数据丢失等方面的损失，避免出现任何问题，还是最好要有适当的备份。</p>
+<h2 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h2><h3 id="一台高配VMware虚拟机，内存12G，硬盘200G（swap分区4G，boot分区200M，剩下全给根目录），CPU开启虚拟化支持，双网卡桥接模式。"><a href="#一台高配VMware虚拟机，内存12G，硬盘200G（swap分区4G，boot分区200M，剩下全给根目录），CPU开启虚拟化支持，双网卡桥接模式。" class="headerlink" title="一台高配VMware虚拟机，内存12G，硬盘200G（swap分区4G，boot分区200M，剩下全给根目录），CPU开启虚拟化支持，双网卡桥接模式。"></a>一台高配VMware虚拟机，内存12G，硬盘200G（swap分区4G，boot分区200M，剩下全给根目录），CPU开启虚拟化支持，双网卡桥接模式。</h3><h3 id="安装bash-completion-vim和net-tools工具"><a href="#安装bash-completion-vim和net-tools工具" class="headerlink" title="安装bash-completion,vim和net-tools工具"></a>安装bash-completion,vim和net-tools工具</h3><p>[root@Openstack240 ~]# yum -y install bash-completion vim net-tools</p>
+<h3 id="关闭SELinux和firewalld"><a href="#关闭SELinux和firewalld" class="headerlink" title="关闭SELinux和firewalld"></a>关闭SELinux和firewalld</h3><p>[root@Openstack240 ~]# vi &#x2F;etc&#x2F;selinux&#x2F;config</p>
+<p>SELINUX&#x3D;disabled</p>
+<p>[root@Openstack240 ~]# setenforce 0</p>
+<p>[root@Openstack240 ~]# getenforce</p>
+<p>Permissive</p>
+<p>[root@Openstack240 ~]# systemctl disable firewalld &amp;&amp; systemctl stop firewalld</p>
+<p>[root@Openstack240 ~]# systemctl status firewalld</p>
+<h3 id="配置-x2F-etc-x2F-hosts"><a href="#配置-x2F-etc-x2F-hosts" class="headerlink" title="配置&#x2F;etc&#x2F;hosts"></a>配置&#x2F;etc&#x2F;hosts</h3><p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;hosts</p>
+<p>192.168.128.240 OpenStack</p>
+<h3 id="下载epel源"><a href="#下载epel源" class="headerlink" title="下载epel源"></a>下载epel源</h3><p>[root@Openstack240 ~]# yum -y install epel-release</p>
+<h3 id="配置网卡信息"><a href="#配置网卡信息" class="headerlink" title="配置网卡信息"></a>配置网卡信息</h3><p>IP地址	网络类型	网卡	在OpenStack网络中的作用<br>192.168.128.240	bridge（桥接）	ens32	<br>OpenStack内部管理网络（management network），Horizon web界面访问就是通过该网卡</p>
+<p>无（不能配置IP地址）	bridge（桥接）	ens33	外部网络（external network），让neutron（OpenStack中的网络组件）的br-ex绑定使用，OpenStack中的虚拟机是通过该网卡与外网通信</p>
+<p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens32</p>
+<p>&#x2F;&#x2F;修改以下几行，如果不存在则添加</p>
+<p>BOOTPROTO&#x3D;none　　&#x2F;&#x2F;将dhcp改为none，使自动获取改为静态获取</p>
+<p>ONBOOT&#x3D;yes　　&#x2F;&#x2F;启动用该网卡</p>
+<p>IPADDR&#x3D;192.168.128.240　　&#x2F;&#x2F;设置IPv4地址</p>
+<p>NETMASK&#x3D;255.255.255.0　　&#x2F;&#x2F;设置子网掩码</p>
+<p>GATEWAY&#x3D;192.168.128.254　　&#x2F;&#x2F;设置默认网关</p>
+<p>DNS1&#x3D;61.177.7.1　　&#x2F;&#x2F;设置DNS</p>
+<p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</p>
+<p>&#x2F;&#x2F;修改以下几行，并将其移动到文件开头，如果不存在则添加。</p>
+<p>TYPE&#x3D;Ethernet</p>
+<p>NAME&#x3D;ens33</p>
+<p>DEVICE&#x3D;ens33　　&#x2F;&#x2F;如果是开启虚拟机后添加网卡，需要手动编辑以上三行</p>
+<p>BOOTPROTO&#x3D;none　　&#x2F;&#x2F;将dhcp改为none，使自动获取改为静态获取</p>
+<p>ONBOOT&#x3D;yes　　&#x2F;&#x2F;启用该网卡</p>
+<h3 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h3><p>[root@OpenStack240 ~]# systemctl restart network</p>
+<h3 id="安装基础包"><a href="#安装基础包" class="headerlink" title="安装基础包"></a>安装基础包</h3><p>[root@Openstack240 ~]# yum -y install python-devel libffi-devel gcc openssl-devel git python-pip</p>
+<h3 id="配置pip镜像源，方便快速下载python库（默认从国外下载）"><a href="#配置pip镜像源，方便快速下载python库（默认从国外下载）" class="headerlink" title="配置pip镜像源，方便快速下载python库（默认从国外下载）"></a>配置pip镜像源，方便快速下载python库（默认从国外下载）</h3><p>[root@Openstack240 ~]# mkdir .pip</p>
+<p>[root@Openstack240 ~]# tee .pip&#x2F;pip.conf &lt;&lt; EOF　　&#x2F;&#x2F;不知道为什么cat失败，所以用了tee</p>
+<p>[global]index-url&#x3D;<a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>[install]trusted-host&#x3D;mirrors.aliyun.com</p>
+<h3 id="升级pip"><a href="#升级pip" class="headerlink" title="升级pip"></a>升级pip</h3><p>[root@Openstack240 ~]# pip install -U pip</p>
+<h3 id="使用pip安装ansible，注意不要使用yum安装，否则会与kolla中的YAML包冲突"><a href="#使用pip安装ansible，注意不要使用yum安装，否则会与kolla中的YAML包冲突" class="headerlink" title="使用pip安装ansible，注意不要使用yum安装，否则会与kolla中的YAML包冲突"></a>使用pip安装ansible，注意不要使用yum安装，否则会与kolla中的YAML包冲突</h3><p>[root@Openstack240 ~]# pip install ansible</p>
+<h3 id="使用pip安装kolla-ansible"><a href="#使用pip安装kolla-ansible" class="headerlink" title="使用pip安装kolla-ansible"></a>使用pip安装kolla-ansible</h3><p>[root@Openstack240 ~]# pip install kolla-ansible<br>　如果出现如下错误<br>&#x2F;&#x2F;已经存在PyYAML3.10导致不能安装PyYAML</p>
+<p>Found existing installation: PyYAML 3.10</p>
+<p>Cannot uninstall ‘PyYAML’. It is a distutils installed project and thus we cannot accurately determine which files belong to it</p>
+<p> which would lead to only a partial uninstall.</p>
+<p>&#x2F;&#x2F;出现如上错误，请执行以下步骤</p>
+<p>[root@Openstack240 ~]# pip install PyYAML –ignore-installed PyYAML　　&#x2F;&#x2F;忽略已经安装的PyYAML，安装PyYAML</p>
+<p>[root@Openstack240 ~]# pip install kolla-ansible　　&#x2F;&#x2F;重新安装kolla-ansible</p>
+<h3 id="复制kolla-ansible的相关配置文件"><a href="#复制kolla-ansible的相关配置文件" class="headerlink" title="复制kolla-ansible的相关配置文件"></a>复制kolla-ansible的相关配置文件</h3><p>[root@Openstack240 ~]# cp -r &#x2F;usr&#x2F;share&#x2F;kolla-ansible&#x2F;etc_examples&#x2F;kolla &#x2F;etc&#x2F;</p>
+<p>[root@Openstack240 ~]# ls &#x2F;etc&#x2F;kolla&#x2F;</p>
+<p>globals.yml  passwords.yml</p>
+<p>[root@Openstack240 ~]# cp &#x2F;usr&#x2F;share&#x2F;kolla-ansible&#x2F;ansible&#x2F;inventory&#x2F;* &#x2F;etc&#x2F;kolla&#x2F;</p>
+<p>[root@Openstack240 ~]# ls &#x2F;etc&#x2F;kolla&#x2F;</p>
+<p>all-in-one  globals.yml  multinode  passwords.yml</p>
+<p>　　文件说明：all-in-one是安装单节点OpenStack的ansible自动安装配置文件；multinode是安装多节点OpenStack的ansible自动安装配置文件；globals.yml是OpenStack部署的自定义配置文件；passwords.yml是OpenStack中各个服务的密码文件。</p>
+<h3 id="编辑kolla-ansible的配置文件，用于自定义安装OpenStack"><a href="#编辑kolla-ansible的配置文件，用于自定义安装OpenStack" class="headerlink" title="编辑kolla-ansible的配置文件，用于自定义安装OpenStack"></a>编辑kolla-ansible的配置文件，用于自定义安装OpenStack</h3><h4 id="生成OpenStack各个服务的密码文件，并修改Web页面登录密码"><a href="#生成OpenStack各个服务的密码文件，并修改Web页面登录密码" class="headerlink" title="生成OpenStack各个服务的密码文件，并修改Web页面登录密码"></a>生成OpenStack各个服务的密码文件，并修改Web页面登录密码</h4><p>[root@Openstack240 ~]# kolla-genpwd</p>
+<p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;kolla&#x2F;passwords.yml</p>
+<p>&#x2F;&#x2F;修改第165行，这是登录Dashboard（web界面控制台）的密码。正常情况下也不能太简单，可以截取一段自动生成的密码</p>
+<p>keystone_admin_password: 123456</p>
+<h4 id="编辑-x2F-etc-x2F-kolla-x2F-global-yml自定义OpenStack中的部署事项"><a href="#编辑-x2F-etc-x2F-kolla-x2F-global-yml自定义OpenStack中的部署事项" class="headerlink" title="编辑&#x2F;etc&#x2F;kolla&#x2F;global.yml自定义OpenStack中的部署事项"></a>编辑&#x2F;etc&#x2F;kolla&#x2F;global.yml自定义OpenStack中的部署事项</h4><p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;kolla&#x2F;globals.yml</p>
+<p>&#x2F;&#x2F;第14行和第15行，选择下载的基础镜像，5选1<br>kolla_base_distro: “centos”<br>&#x2F;&#x2F;第17行和第18行，选择的安装方法，2选1。binary二进制安装，source源码安装<br>kolla_install_type: “source”<br>&#x2F;&#x2F;第20行和第21行，选择OpenStack的版本标签，详细请看：<a target="_blank" rel="noopener" href="https://releases.openstack.org/">https://releases.openstack.org/</a><br>openstack_release: “stein”　　&#x2F;&#x2F;注意版本必须小写，后期下载的OpenStack相关的docker镜像标签也为stein。我是train版本失败，才换成stein<br>&#x2F;&#x2F;第23行和第24行，存放配置文件的位置<br>node_custom_config: “&#x2F;etc&#x2F;kolla&#x2F;config”　　&#x2F;&#x2F;默认存放地址<br>&#x2F;&#x2F;第31行，OpenStack内部管理网络地址，通过该IP访问OpenStack Web页面进行管理。如果启用了高可用，需要设置为VIP（漂移IP）<br>kolla_internal_vip_address: “192.168.128.240”<br>&#x2F;&#x2F;第87行，OpenStack内部管理网络地址的网卡接口<br>network_interface: “ens32”<br>&#x2F;&#x2F;第105行，OpenStack外部（或公共）网络的网卡接口，可以是vlan模式或flat模式。<br>&#x2F;&#x2F;此网卡应该在没有IP地址的情况下处于活动，如果不是，那么OpenStack云平台中的云主机实例将无法访问外部网络。（存在IP时br-ex桥接就不成功）<br>neutron_external_interface: “ens33”<br>&#x2F;&#x2F;第190行，关闭高可用<br>enable_haproxy: “no”<br>&#x2F;&#x2F;第213行，关闭cinder（块存储）<br>enable_cinder: “no”<br>&#x2F;&#x2F;第443行和第444行,指定nova-compute守护进程使用的虚拟化技术。（kvm好像有点问题，大家可以试试，看看你们能不能过nova下载）<br>&#x2F;&#x2F;nova-compute是一个非常重要的守护进程，负责创建和终止虚拟机实例，即管理虚拟机实例的生命周期<br>nova_compute_virt_type: “qemu”</p>
+<h4 id="生成ssh-key，并给自己授权"><a href="#生成ssh-key，并给自己授权" class="headerlink" title="生成ssh key，并给自己授权"></a>生成ssh key，并给自己授权</h4><p>[root@Openstack240 ~]# ssh-keygen<br>[root@Openstack240 ~]# ssh-copy-id -i &#x2F;root&#x2F;.ssh&#x2F;id_rsa.pub root@OpenStack</p>
+<h4 id="配置单节点清单文件"><a href="#配置单节点清单文件" class="headerlink" title="配置单节点清单文件"></a>配置单节点清单文件</h4><p>[root@Openstack240 ~]# vim &#x2F;etc&#x2F;kolla&#x2F;all-in-one</p>
+<p>&#x2F;&#x2F;修改第3行到第19行，将localhost       ansible_connection&#x3D;local改为OpenStack</p>
+<p>&#x2F;&#x2F;可以使用替换命令”:1,$s&#x2F;localhost       ansible_connection&#x3D;local&#x2F;OpenStack&#x2F;“</p>
+<p>[control]</p>
+<p>OpenStack</p>
+<p>[network]</p>
+<p>OpenStack</p>
+<p>[compute]</p>
+<p>OpenStack</p>
+<p>[storage]</p>
+<p>OpenStack</p>
+<p>[monitoring]</p>
+<p>OpenStack</p>
+<p>[deployment]</p>
+<p>OpenStack</p>
+<h3 id="安装bootstrap-servers部署OpenStack所需的依赖包。该包由kolla-ansible提供，包含docker。"><a href="#安装bootstrap-servers部署OpenStack所需的依赖包。该包由kolla-ansible提供，包含docker。" class="headerlink" title="安装bootstrap-servers部署OpenStack所需的依赖包。该包由kolla-ansible提供，包含docker。"></a>安装bootstrap-servers部署OpenStack所需的依赖包。该包由kolla-ansible提供，包含docker。</h3><p>[root@Openstack240 ~]# kolla-ansible -i &#x2F;etc&#x2F;kolla&#x2F;all-in-one bootstrap-servers</p>
+<h3 id="对当前主机进行预部署（检测），直接看最后的统计即可。如果检测报错，可以查看前面的TASK-precheck-…-部分，可以快速定位到错误"><a href="#对当前主机进行预部署（检测），直接看最后的统计即可。如果检测报错，可以查看前面的TASK-precheck-…-部分，可以快速定位到错误" class="headerlink" title="对当前主机进行预部署（检测），直接看最后的统计即可。如果检测报错，可以查看前面的TASK:[precheck …]部分，可以快速定位到错误"></a>对当前主机进行预部署（检测），直接看最后的统计即可。如果检测报错，可以查看前面的TASK:[precheck …]部分，可以快速定位到错误</h3><p>[root@Openstack240 ~]# kolla-ansible -i &#x2F;etc&#x2F;kolla&#x2F;all-in-one prechecks</p>
+<h3 id="指定docker加速器，阿里云免费的申请一下即可"><a href="#指定docker加速器，阿里云免费的申请一下即可" class="headerlink" title="指定docker加速器，阿里云免费的申请一下即可"></a>指定docker加速器，阿里云免费的申请一下即可</h3><p>[root@Openstack240 ~]# tee &#x2F;etc&#x2F;docker&#x2F;daemon.json &lt;&lt; ‘EOF’<br>{<br>“registry-mirrors”: [“<a href="https://xxxxxxx.mirror.aliyuncs.com&quot;]">https://xxxxxxx.mirror.aliyuncs.com&quot;]</a><br>}</p>
+<h3 id="重启docker"><a href="#重启docker" class="headerlink" title="重启docker"></a>重启docker</h3><p>[root@Openstack240 ~]# systemctl daemon-reload<br>[root@Openstack240 ~]# systemctl restart docker</p>
+<h3 id="拉取镜像，时间有点长"><a href="#拉取镜像，时间有点长" class="headerlink" title="拉取镜像，时间有点长"></a>拉取镜像，时间有点长</h3><p>[root@Openstack240 ~]# kolla-ansible -i &#x2F;etc&#x2F;kolla&#x2F;all-in-one pull</p>
+<h3 id="查看拉取下来的镜像"><a href="#查看拉取下来的镜像" class="headerlink" title="查看拉取下来的镜像"></a>查看拉取下来的镜像</h3><p>[root@OpenStack240 ~]# docker images</p>
+<h3 id="部署OpenStack"><a href="#部署OpenStack" class="headerlink" title="部署OpenStack"></a>部署OpenStack</h3><p>[root@OpenStack240 ~]# kolla-ansible -i &#x2F;etc&#x2F;kolla&#x2F;all-in-one deploy</p>
+<h3 id="验证部署，并且生成-x2F-etc-x2F-kolla-x2F-admin-openrc-sh"><a href="#验证部署，并且生成-x2F-etc-x2F-kolla-x2F-admin-openrc-sh" class="headerlink" title="验证部署，并且生成&#x2F;etc&#x2F;kolla&#x2F;admin-openrc.sh"></a>验证部署，并且生成&#x2F;etc&#x2F;kolla&#x2F;admin-openrc.sh</h3><p>[root@OpenStack240 ~]# kolla-ansible -i &#x2F;etc&#x2F;kolla&#x2F;all-in-one post-deploy</p>
+<h3 id="查看-x2F-etc-x2F-kolla-x2F-admin-openrc-sh"><a href="#查看-x2F-etc-x2F-kolla-x2F-admin-openrc-sh" class="headerlink" title="查看&#x2F;etc&#x2F;kolla&#x2F;admin-openrc.sh"></a>查看&#x2F;etc&#x2F;kolla&#x2F;admin-openrc.sh</h3><p>[root@OpenStack240 ~]# cat &#x2F;etc&#x2F;kolla&#x2F;admin-openrc.sh<br>export OS_PROJECT_DOMAIN_NAME&#x3D;Default<br>export OS_USER_DOMAIN_NAME&#x3D;Default<br>export OS_PROJECT_NAME&#x3D;admin<br>export OS_TENANT_NAME&#x3D;admin<br>export OS_USERNAME&#x3D;admin　　&#x2F;&#x2F;在该文件中可以看到OpenStack的Web页面账号密码<br>export OS_PASSWORD&#x3D;123456<br>export OS_AUTH_URL&#x3D;<a target="_blank" rel="noopener" href="http://192.168.128.240:35357/v3">http://192.168.128.240:35357/v3</a><br>export OS_INTERFACE&#x3D;internal<br>export OS_IDENTITY_API_VERSION&#x3D;3<br>export OS_REGION_NAME&#x3D;RegionOne<br>export OS_AUTH_PLUGIN&#x3D;password</p>
+<h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h3><h4 id="ansible版本不匹配"><a href="#ansible版本不匹配" class="headerlink" title="ansible版本不匹配"></a>ansible版本不匹配</h4><h4 id="CryptographyDeprecationWarning"><a href="#CryptographyDeprecationWarning" class="headerlink" title="CryptographyDeprecationWarning:"></a>CryptographyDeprecationWarning:</h4><p>Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.</p>
+<h4 id="Cannot-uninstall-‘xxx’"><a href="#Cannot-uninstall-‘xxx’" class="headerlink" title="Cannot uninstall ‘xxx’."></a>Cannot uninstall ‘xxx’.</h4><p>It is a distutils installed project and thus we cannot accurately determine which files belong to it  which would lead to only a partial uninstall.</p>
+<h4 id="Centos7-下pip安装python-ldap失败问题解决（-Modules-x2F-common-h-15-18-致命错误：lber-h：没有那个文件或目录）"><a href="#Centos7-下pip安装python-ldap失败问题解决（-Modules-x2F-common-h-15-18-致命错误：lber-h：没有那个文件或目录）" class="headerlink" title="Centos7 下pip安装python-ldap失败问题解决（ Modules&#x2F;common.h:15:18: 致命错误：lber.h：没有那个文件或目录）"></a>Centos7 下pip安装python-ldap失败问题解决（ Modules&#x2F;common.h:15:18: 致命错误：lber.h：没有那个文件或目录）</h4><p>解决：<br>[root@lms lms]# yum -y install openldap-devel</p>
+<h4 id="Command-“python-setup-py-egg-info“-failed-with-error-code-1-in-x2F-tmp-x2F-pip-build"><a href="#Command-“python-setup-py-egg-info“-failed-with-error-code-1-in-x2F-tmp-x2F-pip-build" class="headerlink" title="Command “python setup.py egg_info“ failed with error code 1 in &#x2F;tmp&#x2F;pip-build-*"></a>Command “python setup.py egg_info“ failed with error code 1 in &#x2F;tmp&#x2F;pip-build-*</h4><ul>
+<li>先卸载安装的python-pip<br>sudo yum remove python-pip</li>
+<li>下载get-pip.py文件<br>wget <a target="_blank" rel="noopener" href="https://bootstrap.pypa.io/pip/2.7/get-pip.py">https://bootstrap.pypa.io/pip/2.7/get-pip.py</a><br>sudo python get-pip.py</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/cloudcomputing/" class="category-chain-item">cloudcomputing</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/cloudcomputing/">#cloudcomputing</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>cloudcomputing期末复习</div>
+      <div>https://wzq20021202.github.io/2022/11/17/cloudcomputing/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>wzq</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>November 17, 2022</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Updated on</div>
+          <div>November 24, 2022</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/11/01/GolangStudy/" title="Golang Study">
+                        <span class="hidden-mobile">Golang Study</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5X8zgUccWBs9FiKoH3CPfbCR-gzGzoHsz","appKey":"W4YgpokeBC5Q4ro7koacgv02","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script  src="https://lib.baomitu.com/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
